@@ -15,14 +15,21 @@ header{
         }
     }
 }
-jumbotron{
-    img{
-        object-fit: cover;
-        object-position: top;
-        height: 300px;
+
+
+.jumbotron{
+
+    >.container{
+  height: 300px;
+        >img{
+            height: 300px;
+    object-fit: cover;
+    object-position:top center;
         width: 100%;
+    } 
     }
 }
+
 nav>.row{
     padding: 10px 0;
     width: 80%;
@@ -53,6 +60,37 @@ nav>.row{
         color:$dark_text;
         text-align: right; 
         font-size: 0.8em;
+    }
+}
+
+main{
+    background-color: $bg_color;
+    >.container{
+        width: 80%;
+        margin: auto;
+        >.current-series{
+            background-color: $main_color;
+            padding: 10px;
+            text-transform: uppercase;
+            position: relative;
+            top: -20px;
+            width: 150px;
+            color: $text_white;
+            text-align: center;
+            font-size: 1.2em;
+        }
+    >.row{
+        justify-content: space-between;
+        column-gap: 20px;
+        row-gap: 20px;
+        display: flex;
+        flex-wrap: wrap;
+    >.comic{
+        max-width: 191px;
+        width:100% / 6;
+       
+    }
+    }
     }
 }
 
