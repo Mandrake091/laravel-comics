@@ -7,7 +7,7 @@
     </div>
     <nav>
     <div class="row">
-      <img src="../images/dc-logo.png" alt="">  
+      <img id="logo" src="../images/dc-logo.png" alt="">  
       <ul>
         <li><a href="">characters</a></li>
         <li><a href="">comics</a></li>
@@ -20,11 +20,12 @@
         <li><a href="">news</a></li>
         <li><a href="">shop</a></li>
       </ul>
-      <input type="text">
+      <div>
+        <input type="text" placeholder="Search">
+        <i class="fa-solid fa-magnifying-glass">
+        </i>
+      </div>
     </div>
 </nav>
 
 
-<h1>Ciao!</h1>
-<a href="/comic"><button> vai ad un altra pagina</button></a>
-</header>

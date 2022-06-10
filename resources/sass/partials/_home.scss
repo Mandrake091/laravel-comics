@@ -1,10 +1,5 @@
-h1{
-    color: blue;
-}
-h2{
-    color:red;
-}
-.container{
+header{
+>.container{
     background-color: $main_color;
     .row{   
         justify-content: flex-end;
@@ -17,14 +12,27 @@ h2{
         text-transform: uppercase;
         padding: 5px;
         font-size: 0.8rem;
-}}
-
+        }
+    }
+}
+jumbotron{
+    img{
+        object-fit: cover;
+        object-position: top;
+        height: 300px;
+        width: 100%;
+    }
+}
 nav>.row{
+    padding: 10px 0;
     width: 80%;
     margin: auto;
     align-items: center;
     display: flex;
     justify-content: space-between;
+    #logo{
+        height: 50px;
+    }
     li{
         list-style: none;
         text-transform: uppercase;
@@ -34,6 +42,17 @@ nav>.row{
         >a{
             text-decoration: none;
         }
+    }
+    
+    input{
+        border: none;
+        border-bottom: 2px solid $main_color;
+        font-weight: bold;
+    }
+    ::placeholder{  
+        color:$dark_text;
+        text-align: right; 
+        font-size: 0.8em;
     }
 }
 
