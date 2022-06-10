@@ -1,0 +1,39 @@
+h1{
+    color: blue;
+}
+h2{
+    color:red;
+}
+.container{
+    background-color: $main_color;
+    .row{   
+        justify-content: flex-end;
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        color: $text_white;
+        column-gap: 20px;
+        text-transform: uppercase;
+        padding: 5px;
+        font-size: 0.8rem;
+}}
+
+nav>.row{
+    width: 80%;
+    margin: auto;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    li{
+        list-style: none;
+        text-transform: uppercase;
+        display: inline-block;
+        letter-spacing: -1px;
+        font-weight: bold;
+        >a{
+            text-decoration: none;
+        }
+    }
+}
+
