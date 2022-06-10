@@ -3,7 +3,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Roboto Condensed", sans-serif;
-  font-size: 1rem;
+  font-size: 1em;
 }
 
 header > .container {
@@ -52,6 +52,7 @@ nav > .row li {
   display: inline-block;
   letter-spacing: -1px;
   font-weight: bold;
+  font-size: 0.9em;
 }
 nav > .row li > a {
   text-decoration: none;
@@ -93,7 +94,17 @@ main > .container > .current-series {
   width: 150px;
   color: white;
   text-align: center;
-  font-size: 1.2em;
+  font-size: 1.1rem;
+}
+main > .container > .load-more {
+  margin: 30px auto 30px auto;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  text-align: center;
+  width: 150px;
+  padding: 10px;
+  background-color: #0282f9;
+  color: white;
 }
 main > .container > .row {
   justify-content: space-between;
@@ -104,6 +115,29 @@ main > .container > .row {
   flex-wrap: wrap;
 }
 main > .container > .row > .comic {
+  color: white;
   max-width: 191px;
   width: 100%/6;
+}
+main .container:nth-child(2) {
+  background-color: #0282f9;
+  width: 100%;
+}
+main .container:nth-child(2) > .row {
+  margin: auto;
+  width: 80%;
+}
+main .container:nth-child(2) > .row > .card-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+main .container:nth-child(2) > .row > .card-container > img {
+  height: 100px;
+  padding: 30px 10px;
+}
+main .container:nth-child(2) > .row > .card-container > p {
+  text-transform: uppercase;
+  color: white;
+  font-size: 0.8em;
 }
