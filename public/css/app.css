@@ -226,3 +226,75 @@ footer > .footer-down > .row > div > span {
 footer > .footer-down > .row > div > img {
   width: 30px;
 }
+
+section {
+  background-color: white;
+}
+section > .line {
+  height: 50px;
+  width: 100%;
+  background-color: #0282f9;
+}
+section > .comic-container {
+  width: 80%;
+  margin: auto;
+  height: 10px;
+}
+section > .comic-container > .comic {
+  position: relative;
+  top: -225px;
+  border: 1px solid white;
+  color: white;
+  width: 125px;
+}
+section > .comic-container > .comic > img {
+  width: 100%;
+}
+section > .comic-container > .comic > p {
+  padding: 5px;
+  font-size: 0.8em;
+  background-color: #0282f9;
+  text-transform: uppercase;
+  text-align: center;
+}
+section .container {
+  width: 80%;
+  margin: auto;
+}
+section .container > .row {
+  display: flex;
+}
+section .container > .row > .col-sx > h1 {
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+section .container:last-child {
+  background-color: #0282f9;
+  width: 100%;
+}
+section .container:last-child > .row {
+  justify-content: space-between;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  row-gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 9999;
+  margin: auto;
+  width: 80%;
+}
+section .container:last-child > .row > .card-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+section .container:last-child > .row > .card-container > img {
+  height: 100px;
+  padding: 30px 10px;
+}
+section .container:last-child > .row > .card-container > p {
+  text-transform: uppercase;
+  color: white;
+  font-size: 0.8em;
+}

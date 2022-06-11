@@ -1,6 +1,9 @@
 @extends('layouts.layout')
 
 @section('main')
+<main>
+
+
 <div class="container">
     <div class="current-series">
     <h3>current series</h3>
@@ -9,7 +12,7 @@
         @foreach ($comics as $key => $comic)
         @dump($key)
         <div class="comic">
-            <a href="">
+            <a href="/comic">
             <img src="{{$comic['thumb']}}" alt="">
             </a>
             <p>{{$comic['series']}}</p>
@@ -44,4 +47,5 @@
         </div>
     </div>
 </div>
+</main>
 @endsection

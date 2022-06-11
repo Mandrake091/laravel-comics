@@ -1,0 +1,75 @@
+section {
+    > .line {
+        height: 50px;
+        width: 100%;
+        background-color: $main_color;
+    }
+    background-color: $text_white;
+    > .comic-container {
+        width: 80%;
+        margin: auto;
+        height: 10px;
+
+        > .comic {
+            position: relative;
+            top: -225px;
+            border: 1px solid $text_white;
+            color: $text_white;
+            width: 125px;
+            > img {
+                width: 100%;
+            }
+            > p {
+                padding: 5px;
+                font-size: 0.8em;
+                background-color: $main_color;
+                text-transform: uppercase;
+                text-align: center;
+            }
+        }
+    }
+    .container {
+        > .row {
+            display: flex;
+            >.col-sx{
+                 > h1 {
+                font-size: 1.5em;
+                text-transform: uppercase;
+            }
+            }
+           
+        }
+
+        width: 80%;
+        margin: auto;
+    }
+    .container:last-child {
+        background-color: $main_color;
+        width: 100%;
+        > .row {
+            justify-content: space-between;
+            column-gap: 20px;
+            row-gap: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            position: relative;
+            z-index: 9999;
+            margin: auto;
+            width: 80%;
+            > .card-container {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                > img {
+                    height: 100px;
+                    padding: 30px 10px;
+                }
+                > p {
+                    text-transform: uppercase;
+                    color: $text_white;
+                    font-size: 0.8em;
+                }
+            }
+        }
+    }
+}

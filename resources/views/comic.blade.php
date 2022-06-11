@@ -1,21 +1,40 @@
 @extends('layouts.layout')
 @section('main')
-<div class="container">
-    <div class="current-series">
-    <h3>current series</h3>
+
+<section>
+    <div class="line">
     </div>
-    <div class="row">
-        @foreach ($comics as $comic)
+    <div class="comic-container">
         <div class="comic">
-            <img src="{{$comic['thumb']}}" alt="">
-            <p>{{$comic['series']}}</p>
+                <img src="{{$comics[$key]['thumb']}}" alt="">
+                <p>view gallery</p>
+    </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sx">
+                <h1>{{$comics[$key]['title']}}</h1>
+                <div class="price">
+                    <p>U.S Price: {{$comics[$key]['price']}}</p>
+                    <p>AVAILABLE</p>
+                    <p>Check Availability</p>
+                </div>
+                <div>
+                    {{$comics[$key]['description']}}
+                </div>
+            </div>
+            <div class="col-dx">
+                <img src="{{$comics[$key]['thumb']}}" alt="">
+
+            </div>
         </div>
-        @endforeach
+       
+        
     </div>
-    <div class="load-more">
-        <h3>load more</h3>
-    </div>
-</div>
+
+
+
+        
 <div class="container">
     <div class="row">
         <div class="card-container">
@@ -40,4 +59,6 @@
         </div>
     </div>
 </div>
+</section>
+
 @endsection
