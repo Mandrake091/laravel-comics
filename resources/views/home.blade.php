@@ -6,9 +6,12 @@
     <h3>current series</h3>
     </div>
     <div class="row">
-        @foreach ($comics as $comic)
+        @foreach ($comics as $key => $comic)
+        @dump($key)
         <div class="comic">
+            <a href="">
             <img src="{{$comic['thumb']}}" alt="">
+            </a>
             <p>{{$comic['series']}}</p>
         </div>
         @endforeach
@@ -39,11 +42,6 @@
             <img src="./images/buy-dc-power-visa.svg" alt="">
             <p>digital comics</p>
         </div>
-
     </div>
 </div>
-
-
-<h1>Ciao!</h1>
-<a href="/comic"><button> vai ad un altra pagina</button></a>
 @endsection
