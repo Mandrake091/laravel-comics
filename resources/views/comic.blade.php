@@ -6,17 +6,17 @@
     </div>
     <div class="comic-container">
         <div class="comic">
-                <img src="{{$comics[$key]['thumb']}}" alt="">
+                <img src="{{$comics['thumb']}}" alt="">
                 <p>view gallery</p>
         </div>
     </div>
     <div class="container">
         <div class="row">
             <div class="col-sx">
-                <h1>{{$comics[$key]['title']}}</h1>
+                <h1>{{$comics['title']}}</h1>
                 <div class="price">
                     <div>
-                      <p><span>U.S Price: </span>{{$comics[$key]['price']}}</p>  
+                      <p><span>U.S Price: </span>{{$comics['price']}}</p>  
                     </div>
 
                     <div>
@@ -28,15 +28,15 @@
                         </div>  
                     </div>
                 </div>
-                
+
                 <div>
                     <p>
-                    {{$comics[$key]['description']}}
+                    {{$comics['description']}}
                     </p>
                 </div>
             </div>
             <div class="col-dx">
-                <img src="{{$comics[$key]['thumb']}}" alt="">
+                <img src="{{$comics['thumb']}}" alt="">
             </div>
         </div>
     </div>
@@ -49,7 +49,7 @@
                     <span>Art by: </span> 
                     </div>
                     <div class="inner-dx-col">
-                @foreach($comics[$key]['artists'] as $key => $artist)
+                @foreach($comics['artists'] as $key => $artist)
                          <a href="">{{$artist}}</a> , 
                 @endforeach  
                     </div>
@@ -59,7 +59,7 @@
                     <span>Written by: </span> 
                 </div>
                     <div class="inner-dx-col">
-                @foreach($comics[0]['writers'] as $key => $written)
+                @foreach($comics['writers'] as $key => $written)
                          <a href="">{{$written}}</a> , 
                 @endforeach  
                     </div>
@@ -73,7 +73,7 @@
                     <span>Series: </span> 
                     </div>
                     <div class="inner-dx-col">
-                        <a href="">{{$comics[0]['series']}}</a>  
+                        <a href="">{{$comics['series']}}</a>  
                     </div>
                 </div>
                 <div class="row">
@@ -81,7 +81,7 @@
                     <span>U.S. Price: </span> 
                 </div>
                     <div class="inner-dx-col">
-                         <a href="">{{$comics[0]['price']}}</a> 
+                         <a href="">{{$comics['price']}}</a> 
                     </div>
                 </div> 
                    <div class="row">
@@ -89,7 +89,7 @@
                     <span>On Sale Date: </span> 
                 </div>
                     <div class="inner-dx-col">
-                         <a href="">{{$comics[0]['sale_date']}}</a> 
+                         <a href="">{{$comics['sale_date']}}</a> 
                     </div>
                 </div> 
                 </div>

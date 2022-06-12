@@ -2,8 +2,6 @@
 
 @section('main')
 <main>
-
-
 <div class="container">
     <div class="current-series">
     <h3>current series</h3>
@@ -11,7 +9,7 @@
     <div class="row">
         @foreach ($comics as $key => $comic)
         <div class="comic">
-            <a href="/comic">
+            <a href="/comic{{$key}}">
             <img src="{{$comic['thumb']}}" alt="">
             </a>
             <p>{{$comic['series']}}</p>
