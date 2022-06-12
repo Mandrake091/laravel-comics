@@ -10,7 +10,6 @@
     </div>
     <div class="row">
         @foreach ($comics as $key => $comic)
-        @dump($key)
         <div class="comic">
             <a href="/comic">
             <img src="{{$comic['thumb']}}" alt="">
