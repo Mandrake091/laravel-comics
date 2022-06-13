@@ -43,6 +43,10 @@ nav > .row {
   display: flex;
   justify-content: space-between;
 }
+nav > .row .active {
+  color: #4daa51;
+  border-bottom: 2px solid #0282f9;
+}
 nav > .row #logo {
   height: 50px;
 }

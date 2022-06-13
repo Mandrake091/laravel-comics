@@ -1,5 +1,6 @@
 @extends('layouts.layout')
 @section('main')
+@section('pageTitle', 'Comics - #1')
 
 <section>
     <div class="line">
@@ -96,34 +97,32 @@
             </div>
         </div>
    </div>
-    
-
-        
-        <div class="container">
-           
-    <div class="row">
-        <div class="card-container">
-            <img src="./images/buy-comics-digital-comics.png" alt="">
-            <p>digital comics</p>
-        </div>
-        <div class="card-container">
-            <img src="./images/buy-comics-merchandise.png" alt="">
-            <p>digital comics</p>
-        </div>
-        <div class="card-container">
-            <img src="./images/buy-comics-subscriptions.png" alt="">
-            <p>digital comics</p>
-        </div>
-        <div class="card-container">
-            <img src="./images/buy-comics-shop-locator.png" alt="">
-            <p>digital comics</p>
-        </div>
-        <div class="card-container">
-            <img src="./images/buy-dc-power-visa.svg" alt="">
-            <p>digital comics</p>
+<i class="fa-brands fa-android"></i>
+<i class="fa-regular fa-star"></i>
+    <div class="container">  
+        <div class="row">
+            <div class="card-container">
+                <img src="./images/buy-comics-digital-comics.png" alt="">
+                <p>digital comics</p>
+            </div>
+            <div class="card-container">
+                <img src="./images/buy-comics-merchandise.png" alt="">
+                <p>digital comics</p>
+            </div>
+            <div class="card-container">
+                <img src="./images/buy-comics-subscriptions.png" alt="">
+                <p>digital comics</p>
+            </div>
+            <div class="card-container">
+                <img src="./images/buy-comics-shop-locator.png" alt="">
+                <p>digital comics</p>
+            </div>
+            <div class="card-container">
+                <img src="./images/buy-dc-power-visa.svg" alt="">
+                <p>digital comics</p>
+            </div>
         </div>
     </div>
-</div>
 </section>
 
 @endsection

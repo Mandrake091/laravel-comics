@@ -1,4 +1,13 @@
+// @import '~bootstrap/scss/bootstrap';
+$fa-font-path: "../fonts/font-awesome" !default;
+
+@import "@fortawesome/font-awesome-free/scss/fontawesome";
+@import "@fortawesome/font-awesome-free/scss/regular";
+@import "@fortawesome/font-awesome-free/scss/solid";
+@import "@fortawesome/font-awesome-free/scss/brands";
+
+
 @import 'partials/_variables';
 @import 'partials/_common';
 @import 'partials/_home';
-@import 'partials/_comic'
+@import 'partials/_comic';

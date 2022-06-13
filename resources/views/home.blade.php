@@ -1,4 +1,5 @@
 @extends('layouts.layout')
+@section('pageTitle', 'Home - Dc Comics')
 
 @section('main')
 <main>
@@ -9,7 +10,7 @@
     <div class="row">
         @foreach ($comics as $key => $comic)
         <div class="comic">
-            <a href="/comic{{$key}}">
+            <a href="/comic">
             <img src="{{$comic['thumb']}}" alt="">
             </a>
             <p>{{$comic['series']}}</p>
